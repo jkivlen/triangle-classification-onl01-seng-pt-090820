@@ -16,8 +16,14 @@ class Triangle
     else
       :scalene
     end
+  end
+  
+  def triangle_inequity
+    
     
   end
+  
+  
     
   
   class TriangleError < StandardError
