@@ -9,6 +9,12 @@ class Triangle
   end
   
   def kind
+    if side 1 = side 2 = side 3
+      equilateral
+      
+    
+  
+  
   
   end
   
