@@ -1,22 +1,23 @@
 class Triangle
   
-  attr_accessor :equilateral, :isosceles, :scalene
+  attr_accessor :a, :b, :c
   
-  def initialize(equilateral, isosceles, scalene)
-    @equilateral = equilateral
-    @isosceles = isosceles
-    @scalene = scalene
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
   end
   
   def kind
-    if side 1 = side 2 = side 3
-      equilateral
-      
-    
-  
-  
-  
+    if a == b == c
+      :equilateral
+    elsif a == b || b == c || c == a
+      :isosceles
+    else
+      :scalene
+    end
   end
+    
   
   class TriangleError < StandardError
     
